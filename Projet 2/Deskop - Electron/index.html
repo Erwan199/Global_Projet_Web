@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+    crossorigin=""></script>
+
+  <title>Netedia - BATTAIS DROUET GUILLARD REILLON</title>
+</head>
+
+<body>
+
+
+  <div class="container">
+    <div class="containerLeft">
+      <div id="mapid"></div>
+    </div>
+
+    <div class="containerRight">
+      <div class="position-haut">
+        <div class="position-haut-gauche">
+          <h1>Netedia - Géolocalisation</h1>
+          <p class="phg-paragraphe1">Pour connaitre votre position,</p>
+          <p class="phg-paragraphe2">veuillez cliquer sur le bouton ci-dessous :</p>
+        </div>
+        <div class="position-haut-droite">
+          <button class="button" onclick="getLocation()">Votre position</button>
+          <div id="affichage"></div>
+        </div>
+      </div>
+
+      <div class="position-bas">
+        <div class="container-alt">
+          <h2>Altitude :</h2>
+          <p id="affichageLatitude"></p>
+        </div>
+        <div class="container-long">
+          <h2>Longitude :</h2>
+          <p id="affichageLongitude"></p>
+        </div>
+      </div>
+
+      <div class="historique">
+        <h2>Historique</h2>
+        <p id="historique"></p>
+      </div>
+
+      <footer>
+        <p>BATTAIS DROUET GUILLARD REILLON</p>
+      </footer>
+
+    </div>
+
+  </div>
+
+
+  <script src="js/maps.js"></script>
+  <script src="js/scriptLocalisation.js"></script>
+  <script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+  </script>
+
+</body>
+
+</html>
