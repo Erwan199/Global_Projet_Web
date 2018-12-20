@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,7 +37,7 @@
 
       <div class="position-bas">
         <div class="container-alt">
-          <h2>Altitude :</h2>
+          <h2>Latitude :</h2>
           <p id="affichageLatitude"></p>
         </div>
         <div class="container-long">
@@ -46,8 +47,9 @@
       </div>
 
       <div class="historique">
-        <h2>Historique</h2>
-        <p id="historique"></p>
+        <h2>Historique :</h2>
+        <div id="historiqueLatitude"></div>
+        <div id="historiqueLongitude"></div>
       </div>
 
       <footer>
@@ -63,7 +65,7 @@
   <script src="js/scriptLocalisation.js"></script>
   <script>
     // You can also require other files to run in this process
-    require('./renderer.js')
+    require("./renderer.js")
   </script>
 
 </body>
